@@ -1,0 +1,23 @@
+{
+  "name": "tableau_bord_inventaire",
+  "version": "1.0.0",
+  "description": "data monitoring",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bertrandmd/tableau_bord_inventaire.git"
+  },
+  "author": "bmd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bertrandmd/tableau_bord_inventaire/issues"
+  },
+  "homepage": "https://github.com/bertrandmd/tableau_bord_inventaire#readme",
+  "devDependencies": {
+    "chart.js": "^2.0.2",
+    "csvtojson": "^0.5.3"
+  }
+}
