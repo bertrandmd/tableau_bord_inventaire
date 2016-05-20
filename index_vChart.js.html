@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" href="css/leaflet.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css" type="text/css" />
+      <script src='js/jquery-2.1.4.js' type="text/javascript"></script>
+      <script src="js/leaflet.ajax.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+          <script src="js/turf.min.js"></script>
+          <script src="js/leaflet.active-layers.min.js"></script>
+    <style>
+    //h2 {float :right;}
+    #map { height: 400px; width: 400px; float:left;}
+    .info {
+      padding: 6px 8px;
+      font: 14px/16px Arial, Helvetica, sans-serif;
+      background: white;
+      background: rgba(255,255,255,0.8);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
+    .header {min-height: 75px;}
+    #titlePrincipal { min-width: 75%;float:left}
+    #indicateurs {min-height: 150px;padding-top: 25px; }
+    .dropdown {
+
+    //margin-left: max-width-170px;
+
+  //position: absolute;
+  //float: right;
+  //top:50%;
+  //transform: translateX(+450%);
+  //transform: translateY(-50%);
+}
+
+a {
+  color: #fff;
+}
+
+
+.dropdown dd,
+.dropdown dt {
+  margin: 0px;
+  padding: 0px;
+}
+
+.dropdown ul {
+  margin: -1px 0 0 0;
+}
+
+.dropdown dd {
+  position: relative;
+}
+
+.dropdown a,
+.dropdown a:visited {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+}
+
+.dropdown dt a {
+  background-color: #36A2EB;
+  display: block;
+  padding: 8px 20px 5px 10px;
+  min-height: 25px;
+  line-height: 24px;
+  overflow: hidden;
+  border: 0;
+  width: 272px;
+}
+
+.dropdown dt a span,
+.multiSel span {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 3px 2px 0;
+}
+
+.dropdown dd ul {
+  background-color: #36A2EB;
+  border: 0;
+  color: #fff;
+  display: none;
+  left: 0px;
+  padding: 2px 15px 2px 5px;
+
+  position: absolute;
+    margin-left: 75%;
+  top: 2px;
+  width: 280px;
+  list-style: none;
+  height: 100px;
+  overflow: auto;
+}
+
+.dropdown span.value {
+  display: none;
+}
+
+.dropdown dd ul li a {
+  padding: 5px;
+  display: block;
+}
+
+.dropdown dd ul li a:hover {
+  background-color: #fff;
+}
+
+button {
+  background-color: #6BBE92;
+  width: 302px;
+  border: 0;
+  padding: 10px 0;
+  margin: 5px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+    </style>
+</head>
+<body>
+  <div class="header">
+    <div id="titlePrincipal"><h2 id="titre">Tableau de Bord Inventaire Icare</h2></div>
+    <dl class="dropdown">
+      <dt>
+      <a href="#">
+        <!--span class="hida">Sélectionner Polluant</span-->
+        <p class="multiSel"></p>
+      </a>
+      </dt>
+      <dd>
+          <div class="mutliSelect">
+              <ul id='polluantCbx'>
+              </ul>
+          </div>
+      </dd>
+  </dl>
+</div>
+<div id="map">
+
+</div>
+  <canvas id="myChart" width="400" height="400"></canvas>
+  <canvas id="myChart2" width="400" height="400"></canvas>
+<canvas id="myChart3" width="400" height="400"></canvas>
+<div id='indicateurs' width="400" height="400">
+  Indicateurs :
+</div>
+<!--table id="table_id" class="display" width="100%">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Code Insee</th>
+            <th>polluant</th>
+            <th>secteur</th>
+            <th>Emission</th>
+            <th>Année</th>
+        </tr>
+    </thead>
+</table-->
+    <script src="index.js"></script>
+</body>
+</html>

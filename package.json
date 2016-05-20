@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bertrandmd/tableau_bord_inventaire#readme",
   "devDependencies": {
-    "chart.js": "^2.0.2",
+    "chart.js": "^2.1.0",
     "csvtojson": "^0.5.3"
   }
 }
